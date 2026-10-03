@@ -31,7 +31,7 @@ internal class Program
         Console.WriteLine("********************************************************************************************************");
 
         string result = ds.NumberToMoney(number);
-        Console.WriteLine($"{number} руб - это{result}");
+        Console.WriteLine($"{number} руб. - это {result}");
 
         Console.ReadLine();
     }
