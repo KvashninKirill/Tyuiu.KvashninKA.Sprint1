@@ -11,7 +11,7 @@ namespace Tyuiu.KvashninKA.Sprint1.Task3.V10.Test
             DataService ds = new DataService();
             double value = 23.6;
             string res = ds.NumberToMoney(value);
-            Assert.AreEqual("23 руб. 60 коп.", res);
+            Assert.AreEqual("23.6 руб. - это 23 руб. 60 коп.", res);
         }
     }
 }

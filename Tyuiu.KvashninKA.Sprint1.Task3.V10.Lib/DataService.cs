@@ -5,10 +5,11 @@ namespace Tyuiu.KvashninKA.Sprint1.Task3.V10.Lib
     {
         public string NumberToMoney(double number)
         {
-           double rounded = Math.Round(number, 2, MidpointRounding.AwayFromZero);
+            double rounded = Math.Round(number, 2, MidpointRounding.AwayFromZero);
             int rubles = (int)Math.Truncate(rounded);
-            int kopecks = (int)Math.Round((rounded-rubles) * 100);
-            return $"{rubles} руб. {kopecks} коп.";
+            int kopecks = (int)Math.Round((rounded - rubles) * 100);
+            string numberStr = number.ToString(System.Globalization.CultureInfo.InvariantCulture);
+            return $"{numberStr} руб. - это {rubles} руб. {kopecks} коп.";
         }
     }
 
